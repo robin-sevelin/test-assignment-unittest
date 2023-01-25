@@ -13,7 +13,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest --watchAll"
+    "test": "npx jest --watchAll --coverage"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,11 @@
     "@types/jest": "^29.2.6"
   },
   "jest": {
-    "preset": "ts-jest"
+    "preset": "ts-jest",
+    "testEnviorment": "node",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ]
   }
 }

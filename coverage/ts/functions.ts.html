@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">45.45% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">45.45% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -84,40 +84,40 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { IAddResponse } from "./models/IAddResult";
-import { Todo } from "./models/Todo";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { IAddResponse } from './models/IAddResult';
+import { Todo } from './models/Todo';
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >addTodo(</span>todoText: string, todos: Todo[]): IAddResponse {
-<span class="cstat-no" title="statement not covered" >  if (todoText.length &gt; 2) {</span>
-    let newTodo = <span class="cstat-no" title="statement not covered" >new Todo(todoText, false);</span>
-<span class="cstat-no" title="statement not covered" >    todos.push(newTodo);</span>
-<span class="cstat-no" title="statement not covered" >    return { success: true, error: "" };</span>
+export function addTodo(todoText: string, todos: Todo[]): IAddResponse {
+  if (todoText.length &gt; 2) {
+    let newTodo = new Todo(todoText, false);
+    todos.push(newTodo);
+    return { success: true, error: '' };
   } else {
-<span class="cstat-no" title="statement not covered" >    return { success: false, error: "Du måste ange minst tre bokstäver" };</span>
+    return { success: false, error: 'Du måste ange minst tre bokstäver' };
   }
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >changeTodo(</span>todo: Todo) {
-<span class="cstat-no" title="statement not covered" >  todo.done = !todo.done;</span>
+export function changeTodo(todo: Todo) {
+  todo.done = !todo.done;
 }
 &nbsp;
 export function removeAllTodos(todos: Todo[]) {
@@ -130,7 +130,7 @@ export function removeAllTodos(todos: Todo[]) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-01-25T14:16:23.894Z
+                at 2023-01-27T10:05:24.039Z
             </div>
         <script src="../prettify.js"></script>
         <script>

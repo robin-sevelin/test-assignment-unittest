@@ -78,4 +78,5 @@ test('array should sort todos by text', () => {
   expect(todos[1]).toEqual({ done: true, text: 'eat candy' });
   expect(todos[2]).toEqual({ done: false, text: 'wash car' });
   expect(todos[0]).toEqual({ done: false, text: 'clean house' });
+  expect(todos).not.toBeNull();
 });
